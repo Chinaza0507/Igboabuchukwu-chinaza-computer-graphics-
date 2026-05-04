@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     SDL_Init(SDL_INIT_VIDEO);
 
-    SDL_Window* window = SDL_CreateWindow("SDL3 Test", 800, 800, 0);
+    SDL_Window* window = SDL_CreateWindow("SDL3 Tesst", 800, 800, 0);
     SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL);
     SDL_Surface* surface0 = IMG_Load("/Users/karen/Documents/Igboabuchukwu-chinaza-computer-graphics/SDL_Base_Project/pr1/pink.jpg");
     SDL_Texture* texture0 = SDL_CreateTextureFromSurface(renderer, surface0);
@@ -31,6 +31,7 @@ int main(int argc, char* argv[])
 
 
 
+
     SDL_Event event;
     bool running = true;
     while (running) {
@@ -49,6 +50,7 @@ int main(int argc, char* argv[])
 
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
+
     SDL_Quit();
     return 0;
 }
